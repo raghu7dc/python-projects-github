@@ -73,7 +73,6 @@ def game():
 
     restart=input('do you wanna start again:(y/n): ')
     if restart=="y":
-
         game()
     else:
         exit()
