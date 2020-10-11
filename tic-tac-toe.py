@@ -11,7 +11,9 @@ def drawboard(board):
     print('-+-+-')
     print(board['1']+'|'+board['2']+'|'+board['3'])
 
-
+board_key=[]
+for key in theBoard:
+    board_key.append(key)
 
 def game():
     turn='x'
@@ -73,6 +75,8 @@ def game():
 
     restart=input('do you wanna start again:(y/n): ')
     if restart=="y":
+        for key in board_key:
+            theBoard[key]=" "
         game()
     else:
         exit()
